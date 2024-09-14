@@ -1,0 +1,103 @@
+.contact_us_wrapper {
+    padding: 72px 0 88px;
+    background-color: #fafafa88;
+    margin-bottom: -24px;
+  }
+  .contact_us_wrapper .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+  }
+  @media (max-width: 992.98px) {
+    .contact_us_wrapper .container {
+      grid-template-columns: 1fr;
+    }
+  }
+  .contact_us_wrapper .container iframe {
+    height: 390px;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    background-color: white;
+    width: 100%;
+    max-width: calc(100vw - 32px);
+  }
+  .contact_us_wrapper .container form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .contact_us_wrapper .container form h2 {
+    margin-bottom: 24px;
+    color: #b46c30;
+  }
+  @media (max-width: 767.98px) {
+    .contact_us_wrapper .container form h2 {
+      text-align: center;
+    }
+  }
+  .contact_us_wrapper .container form .form_wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+  .contact_us_wrapper .container form .form_wrapper input {
+    padding: 16px;
+    border-radius: 12px;
+    border: 1px solid #b2b2b2;
+    color: #000;
+    width: 100%;
+  }
+  .contact_us_wrapper .container form .form_wrapper input:focus {
+    outline: none;
+    border-color: #b46c30;
+  }
+  .contact_us_wrapper .container form .form_wrapper input:last-of-type {
+    grid-column: span 2;
+  }
+  .contact_us_wrapper .container form .form_wrapper textarea, .contact_us_wrapper .container form .form_wrapper button {
+    grid-column: span 2;
+    padding: 16px;
+    border-radius: 12px;
+    border: 1px solid #b2b2b2;
+    color: #000;
+  }
+  .contact_us_wrapper .container form .form_wrapper textarea:focus, .contact_us_wrapper .container form .form_wrapper button:focus {
+    outline: none;
+    border-color: #b46c30;
+  }
+  .contact_us_wrapper .container form .form_wrapper button {
+    background-color: #b46c30;
+    color: white;
+    border-color: #b46c30;
+  }
+  
+
+.contact_infos .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.contact_infos .container a {
+    display: flex;
+    flex-direction: column;
+    color: #1c1c1c;
+    font-size: 22px;
+    align-items: center;
+    text-decoration: none;
+    font-weight: 700;
+    gap: 0;
+}
+
+.contact_infos .container a:last-child {
+    font-size: 18px;
+}
+
+.contact_infos .container a svg {
+    width: 80px;
+    height: 80px;
+    stroke: #b46c30;
+}
+

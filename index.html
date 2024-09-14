@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Special Group</title>
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+        />
 </head>
 
 <body>
@@ -99,16 +103,16 @@
         <nav>
             <div class="container">
                 <div class="logo">
-                    <img src="./assets/imgs/logo.png" alt="">
+                    <a href="/"><img src="./assets/imgs/logo.png" alt=""></a>
                 </div>
                 <div class="left">
                     <div class="links">
-                        <a href="" class="active">الرئيسية</a>
-                        <a href="">عن الشركة</a>
+                        <a href="/" class="active">الرئيسية</a>
+                        <a href="./about-us.html">عن الشركة</a>
                         <a href="">القطاعات</a>
-                        <a href="">شركاتنا</a>
-                        <a href="">المشروعات</a>
-                        <a href="">الميديا</a>
+                        <a href="#our-companies">شركاتنا</a>
+                        <a href="/#projects">المشروعات</a>
+                        <a href="/contact.html">تواصل معنا</a>
                         <button class="close">
                             <svg id="fi_2976286" enable-background="new 0 0 320.591 320.591" height="512"
                                 viewBox="0 0 320.591 320.591" width="512" xmlns="http://www.w3.org/2000/svg">
@@ -134,13 +138,6 @@
                                 </path>
                             </svg>
                         </a>
-                        <a href="">
-                            <svg clip-rule="evenodd" fill-rule="evenodd" height="512" viewBox="0 0 24 24" width="512"
-                                xmlns="http://www.w3.org/2000/svg" id="fi_10385257">
-                                <path
-                                    d="m13.691 15.105 6.102 6.102c.39.391 1.024.391 1.414 0 .391-.39.391-1.024 0-1.414l-6.101-6.102c.875-1.169 1.394-2.62 1.394-4.192 0-3.863-3.136-7-7-7-3.863 0-7 3.137-7 7 0 3.864 3.137 7 7 7 1.571 0 3.022-.518 4.191-1.394zm-4.191-10.606c2.76 0 5 2.241 5 5 0 2.76-2.24 5-5 5-2.759 0-5-2.24-5-5 0-2.759 2.241-5 5-5z">
-                                </path>
-                            </svg> </a>
                     </div>
                 </div>
             </div>
@@ -148,6 +145,7 @@
     </header>
 
     <section class="hero">
+        <a href="https://www.youtube.com/watch?v=PzeDcH30Sns&t=1s" target="_blank" class="show_video"></a>
         <div class="container">
             <div class="text">
                 <h2>
@@ -164,7 +162,7 @@
                     وعاملا فى تحسين جودة الحياة للمجتمع المصرى
                 </p>
                 <div class="more">
-                    <a href="">المزيد عنا <svg id="fi_11502464" enable-background="new 0 0 512 512" height="512"
+                    <a  href="https://www.youtube.com/watch?v=PzeDcH30Sns&t=1s" target="_blank">المزيد عنا <svg id="fi_11502464" enable-background="new 0 0 512 512" height="512"
                             viewBox="0 0 512 512" width="512" xmlns="http://www.w3.org/2000/svg">
                             <path clip-rule="evenodd"
                                 d="m52.246 239.578c-9.043 9.043-9.043 23.803 0 32.846l177.132 177.126c9.057 9.057 23.79 9.057 32.846 0l9.908-9.908c9.065-9.065 9.067-23.79.001-32.857l-134.37-134.357c-9.067-9.065-9.067-23.793 0-32.858l134.369-134.358c9.067-9.066 9.066-23.79-.001-32.856l-9.908-9.908c-9.043-9.043-23.803-9.043-32.846 0zm364.742-177.132c9.052-9.053 23.799-9.052 32.851 0l9.908 9.908c9.048 9.048 9.049 23.808 0 32.857l-134.363 134.359c-9.066 9.066-9.066 23.792 0 32.858l134.364 134.358c9.052 9.051 9.051 23.806 0 32.857l-9.908 9.908c-9.056 9.056-23.795 9.057-32.851 0l-161.398-161.403c-45.274 45.229-33.822 33.759-.033-.033l-15.69-15.691c-9.049-9.049-9.048-23.798 0-32.847z"
@@ -175,7 +173,7 @@
         </div>
     </section>
 
-    <section class="our-companies">
+    <section class="our-companies" id="our-companies">
         <div class="container">
             <div class="text">
                 <img src="./assets/imgs/our-companies-icon.png" alt="">
@@ -186,61 +184,36 @@
                         مختلفة , والشركات الخاصة بالمجموعة هــــــــي</p>
                 </div>
             </div>
-            <div class="companies_wrapper">
-                <div class="company-card">
-                    <img src="./assets/imgs/company-logo.png" alt="">
-                    <h3>شركة احجز للخدمات الطبية</h3>
-                    <p>هي اول منصة الكترونية طبية
-                        متخصصة فى حجز الخدمات الطبية
-                        بنظام الدفع الالكتروني والحجز
-                        المسبق مع توفير خصومات</p>
-                    <img src="./assets/imgs/left.png" alt="" class="icon">
+            <div class="swiper-container swiper mySwiper" style="max-width: 100%;    height: 290px;">
+                <div class="swiper-wrapper">
+                    <a href="https://ehgez.com.eg/" target="_blank" class="swiper-slide company-card">
+                        <img src="./assets/imgs/company-logo.png" alt="">
+                        <h3>شركة احجز للخدمات الطبية</h3>
+                        <p>هي اول منصة الكترونية طبية
+                            متخصصة فى حجز الخدمات الطبية
+                            بنظام الدفع الالكتروني والحجز
+                            المسبق مع توفير خصومات</p>
+                        <img src="./assets/imgs/left.png" alt="" class="icon">
+                    </a>
+                    <a href="https://greenplanet.com.eg/" target="_blank" class="swiper-slide company-card">
+                        <img src="./assets/imgs/G-logo.jpg" alt="">
+                        <h3>جرين بلانت</h3>
+                        <p>من اكبر شركات متخصصة في إدارة منظومة المخلفات البيئية بكافة أنواعها وطرح أفكار جديدة لعمليات المعالجة  .</p>
+                        <img src="./assets/imgs/left.png" alt="" class="icon">
+                    </a>
+                    <a href="https://misrelaan.com/" target="_blank" class="swiper-slide company-card">
+                        <img src="./assets/imgs/misr.png" alt="" style="padding: 10px; border-radius: 4px;background-color: #bf1212;">
+                        <h3>مصر الآن</h3>
+                        <p>وهي منصة إخبارية شاملة لتغطية جميع الأحداث في مصر والعالم والتي تحرص على المصداقية والسرعة في تغطية .</p>
+                        <img src="./assets/imgs/left.png" alt="" class="icon">
+                    </a>
+                    <!-- Repeat for all other company cards -->
                 </div>
-                <div class="company-card">
-                    <img src="./assets/imgs/company-logo.png" alt="">
-                    <h3>شركة احجز للخدمات الطبية</h3>
-                    <p>هي اول منصة الكترونية طبية
-                        متخصصة فى حجز الخدمات الطبية
-                        بنظام الدفع الالكتروني والحجز
-                        المسبق مع توفير خصومات</p>
-                    <img src="./assets/imgs/left.png" alt="" class="icon">
-                </div>
-                <div class="company-card">
-                    <img src="./assets/imgs/company-logo.png" alt="">
-                    <h3>شركة احجز للخدمات الطبية</h3>
-                    <p>هي اول منصة الكترونية طبية
-                        متخصصة فى حجز الخدمات الطبية
-                        بنظام الدفع الالكتروني والحجز
-                        المسبق مع توفير خصومات</p>
-                    <img src="./assets/imgs/left.png" alt="" class="icon">
-                </div>
-                <div class="company-card">
-                    <img src="./assets/imgs/company-logo.png" alt="">
-                    <h3>شركة احجز للخدمات الطبية</h3>
-                    <p>هي اول منصة الكترونية طبية
-                        متخصصة فى حجز الخدمات الطبية
-                        بنظام الدفع الالكتروني والحجز
-                        المسبق مع توفير خصومات</p>
-                    <img src="./assets/imgs/left.png" alt="" class="icon">
-                </div>
-                <div class="company-card">
-                    <img src="./assets/imgs/company-logo.png" alt="">
-                    <h3>شركة احجز للخدمات الطبية</h3>
-                    <p>هي اول منصة الكترونية طبية
-                        متخصصة فى حجز الخدمات الطبية
-                        بنظام الدفع الالكتروني والحجز
-                        المسبق مع توفير خصومات</p>
-                    <img src="./assets/imgs/left.png" alt="" class="icon">
-                </div>
-                <div class="company-card">
-                    <img src="./assets/imgs/company-logo.png" alt="">
-                    <h3>شركة احجز للخدمات الطبية</h3>
-                    <p>هي اول منصة الكترونية طبية
-                        متخصصة فى حجز الخدمات الطبية
-                        بنظام الدفع الالكتروني والحجز
-                        المسبق مع توفير خصومات</p>
-                    <img src="./assets/imgs/left.png" alt="" class="icon">
-                </div>
+            
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+            
+                <!-- Add Navigation -->
             </div>
         </div>
     </section>
@@ -264,13 +237,6 @@
                     </div>
                 </div>
                 <div class="member-card">
-                    <img src="./assets/imgs/team-3.png" alt="">
-                    <div class="title">
-                        <h2>لواء / مقبل عبد العال</h2>
-                        <p>عضو مجلس إدارة</p>
-                    </div>
-                </div>
-                <div class="member-card">
                     <img src="./assets/imgs/team-4.png" alt="">
                     <div class="title">
                         <h2>أ / هناء محمد شطا</h2>
@@ -281,6 +247,13 @@
                     <img src="./assets/imgs/team-5.png" alt="">
                     <div class="title">
                         <h2>أ / روان محمد اسعد</h2>
+                        <p>عضو مجلس إدارة</p>
+                    </div>
+                </div>
+                <div class="member-card">
+                    <img src="./assets/imgs/team-3.png" alt="">
+                    <div class="title">
+                        <h2>لواء / مقبل عبد العال</h2>
                         <p>عضو مجلس إدارة</p>
                     </div>
                 </div>
@@ -309,7 +282,7 @@
         </div>
     </section>
 
-    <section class="popular">
+    <section class="popular" id="projects">
         <div class="container" style="display: block;">
             <h1>
                 <img src="./assets/imgs/popular-icon.png" alt="">
@@ -641,6 +614,40 @@
         جميع الحقوق محفوظة لدي اسبيشيال جروب
     </footer>
     <script src="./assets/js/jquery.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 3, // Default to 3 slides
+            spaceBetween: 30,
+            loop: true, // Enable infinite looping
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            autoplay: {
+                delay: 3000, // Auto-play slides every 3 seconds
+                disableOnInteraction: false,
+            },
+            breakpoints: {
+                // When the screen width is >= 1199.98px
+                1199.98: {
+                    slidesPerView: 3,
+                },
+                // When the screen width is < 1199.98px
+                1199: {
+                    slidesPerView: 2,
+                },
+                // When the screen width is < 575.98px
+                575.98: {
+                    slidesPerView: 1,
+                }
+            }
+        });
+    </script>    
     <script src="./assets/js/main.js"></script>
 </body>
 
