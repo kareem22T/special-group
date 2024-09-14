@@ -226,7 +226,7 @@ header nav .container .left .other a {
         height: 120vw;
         padding: 32px;
         display: none;
-        z-index: 9998;
+        z-index: 999899;
     }
 
     header nav .container .logo img {
@@ -479,9 +479,10 @@ header nav .container .left .other a {
     }
 
     .hero .show_video {
-        display: none;
+        top: 100%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
-
     .hero .more {
         margin-top: 24px;
     }
@@ -553,8 +554,14 @@ header nav .container .left .other a {
     justify-content: center;
     flex-direction: column;
     margin-bottom: 40px;
+    height: 290px;
     color: #000;
+    display: grid;
+    grid-template-rows: 70px auto auto auto;
     text-decoration: none;
+}
+.our-companies .company-card p {
+    font-size: 14px;
 }
 .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
     bottom: 0;
@@ -611,6 +618,10 @@ header nav .container .left .other a {
 @media (max-width: 575.98px) {
     .our-companies {
         padding: 24px 0;
+    }
+
+    .our-companies {
+        padding: 48px 0 24px;
     }
 
 }
