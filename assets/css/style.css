@@ -769,6 +769,7 @@ header nav .container .left .other a {
     transition: all 0.2s ease-in;
     margin-top: 16px;
     margin-bottom: 40px;
+    min-height: 570px;
 }
 
 .popular .container .prod:hover {
@@ -804,6 +805,8 @@ header nav .container .left .other a {
 .popular .container .prod h2 {
     color: #b46c30;
     margin-bottom: 8px;
+    font-size: 20px;
+    line-height: 33px;
 }
 
 .popular .container .prod p {
