@@ -288,8 +288,11 @@
                 <img src="./assets/imgs/popular-icon.png" alt="">
                 مشروعات سبيشيال جروب</h1>
         </div>
-        <div class="container">
-            <a href="" class="prod">
+        <div class="container" style="display: block;">
+            <div class="swiper-container swiper mySwiper" style="width: 100%;">
+                <div class="swiper-wrapper">
+
+            <a href="" class="prod swiper-slide">
                 <div class="head">
                     <svg version="1.1" id="fi_942126" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
                         <g>
@@ -395,7 +398,7 @@
                             fill-rule="evenodd"></path>
                     </svg></span>
             </a>
-            <a href="" class="prod">
+            <a href="" class="prod swiper-slide">
                 <div class="head">
                     <svg version="1.1" id="fi_942126" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
                         <g>
@@ -501,7 +504,7 @@
                             fill-rule="evenodd"></path>
                     </svg></span>
             </a>
-            <a href="" class="prod">
+            <a href="" class="prod swiper-slide">
                 <div class="head">
                     <svg version="1.1" id="fi_942126" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
                         <g>
@@ -608,6 +611,14 @@
                     </svg></span>
             </a>
         </div>
+            
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+    
+        <!-- Add Navigation -->
+    </div>
+
+        </div>
     </section>
 
     <footer>
@@ -617,7 +628,7 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
         var swiper = new Swiper('.swiper-container', {
-            slidesPerView: 3, // Default to 3 slides
+            slidesPerView: 1, // Default to 3 slides
             spaceBetween: 30,
             loop: true, // Enable infinite looping
             pagination: {

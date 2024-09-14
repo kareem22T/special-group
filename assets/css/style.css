@@ -757,6 +757,9 @@ header nav .container .left .other a {
     gap: 32px;
 }
 
+.popular .swiper {
+    padding: 0 16px;
+}
 .popular .container .prod {
     padding: 24px 16px;
     border-radius: 16px;
@@ -764,6 +767,8 @@ header nav .container .left .other a {
     display: block;
     text-decoration: none;
     transition: all 0.2s ease-in;
+    margin-top: 16px;
+    margin-bottom: 40px;
 }
 
 .popular .container .prod:hover {
